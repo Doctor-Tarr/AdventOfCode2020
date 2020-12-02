@@ -1,7 +1,9 @@
+import os
 import sys
 import itertools
 
-file = '/home/lawrence/gitsource/AdventOfCode2020/Day1/expenses.list'
+file = os.path.join(sys.path[0], 'expenses.list')
+print(file)
 
 def process_expenses(filename, count):
     
